@@ -1,1 +1,8 @@
 /* Theme 스타일 작성 */
+:root {
+    --color-blue-600 : #0074E9 ;
+    --color-gary-600: #D9D9D9;
+    --btn-background: rgba(0, 0, 0, 0.2);
+    --btn-arrow: #F3F3F3;
+    --content-border:#C4C4C4;
+}

@@ -1,1 +1,124 @@
 /* CSS 작성 */
+.container{
+    width: 1020px;
+    height: 1010px;
+    margin-left: 321px;
+}
+
+.logo{
+    width: 176px;
+    height: 40px;
+}
+
+header{
+    margin-top: 100px;
+    margin-left: 321px;
+    margin-bottom: 175px;
+}
+
+.middleBar{
+    margin: 0px 10px;
+}
+
+h2> span{
+    color: var(--color-gary-600);
+    font-size: 16px;
+}
+
+#leftContent{
+    float: left;
+}
+
+#rightContent{
+    float: right;
+}
+
+#leftContent, #rightContent{
+    width: 502px;
+    height: 310px;
+    padding: 20px 28px;
+}
+
+.headerContentImg{
+    width: 446px;
+    height: 270px;
+}
+
+.middleContent{
+    width: 243px;
+    height: 310px;
+    float: left;
+    margin-right: 16px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomContent{
+    width: 243px;
+    height: 310px;
+    float: left;
+    margin-left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomContentLeft{
+    width: 502px;
+    height: 310px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleContent:last-child{
+    margin-right: -16px;
+}
+
+.middleContent img,.bottomContent img {
+    width: 200px;
+    height: 282px;
+}
+
+.content{
+    border: 1px solid var(--content-border);
+    position: relative;
+}
+section a:hover{
+    border: 1px solid var(--color-blue-600);
+}
+section a:focus{
+     outline: none !important; border-color:  var(--color-blue-600); box-shadow: 0 0 10px  var(--color-blue-600); 
+}
+
+.bottomContentLeft , .bottomContent{
+    margin-top: 16px;
+}
+
+.content::before{
+    content: ">" ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--btn-background);
+    color: white;
+    padding:16px 18px;
+    margin: 0px 0px 20px 20px;
+}
+.content::after{
+    content: "구매하기 >" ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--btn-background);
+    color: red;
+    padding:16px 18px;
+    margin: 0px 0px 20px 20px;
+}
+
+a{
+    text-decoration: none;
+}
