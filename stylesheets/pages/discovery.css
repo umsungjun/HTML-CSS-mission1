@@ -88,7 +88,7 @@ h2> span{
     position: relative;
 }
 section a:hover{
-    border: 1px solid var(--color-blue-600);
+    border: 1px solid var(--color-blue-600);  
 }
 section a:focus{
      outline: none !important; border-color:  var(--color-blue-600); box-shadow: 0 0 10px  var(--color-blue-600); 
@@ -108,17 +108,32 @@ section a:focus{
     padding:16px 18px;
     margin: 0px 0px 20px 20px;
 }
-.content::after{
+
+
+a{
+    text-decoration: none;
+}
+
+section a:hover::before{
     content: "구매하기 >" ;
     position: absolute;
     bottom: 0;
     left: 0;
-    background: var(--btn-background);
-    color: red;
+    background: var(--color-blue-600);
+    color: white;
     padding:16px 18px;
     margin: 0px 0px 20px 20px;
+    transition:all ease 1s;
 }
 
-a{
-    text-decoration: none;
+section a:focus::before{
+    content: "구매하기 >" ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--color-blue-600);
+    color: white;
+    padding:16px 18px;
+    margin: 0px 0px 20px 20px;
+    transition:all ease 1s;
 }
